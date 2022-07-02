@@ -14,9 +14,9 @@ class CircularQueue{
     }
 
     // Enqueues 'X' into the queue. Returns true if it gets pushed into the stack, and false otherwise.
-    bool enqueue(int value){
+    bool enqueue(int value){ 
 
-        if(front==0 &&rear==size-1 || rear ==(front-1)%(size-1)){
+        if(front==0 &&rear==size-1 || rear ==(front-1)%(size-1)){// check for full
             return false;
         }
         else if(front == -1)//first element to push
@@ -56,6 +56,8 @@ class CircularQueue{
         return ans;
     }
 };
+
+
 int main(){
     return 0;
 }
