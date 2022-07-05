@@ -1,10 +1,10 @@
-// { Driver Code Starts
+
 #include<iostream>
 #include<queue>
 #include<map>
 using namespace std;
 
- // } Driver Code Ends
+
 class Solution {
 	public:
 		string FirstNonRepeating(string A){
@@ -39,7 +39,7 @@ class Solution {
 
 };
 
-// { Driver Code Starts.
+
 int main(){
 	int tc;
 	cin >> tc;
@@ -51,4 +51,4 @@ int main(){
 		cout << ans << "\n";
 	}
 	return 0;
-}  // } Driver Code Ends
+}  
