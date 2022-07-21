@@ -285,6 +285,8 @@ cout<<endl;
     cout<<"Printing the BST after the deletion of the node:"<<endl;
     levelOrderTraversal(root);
 
+//50 20 70 10 30 90 110 -1  This is the value of BST to be input
+
 
     return 0;
 }
