@@ -272,7 +272,7 @@ int main(){
     preorder(root);
     cout<<endl;
 
-cout<<endl;
+    cout<<endl;
     cout<<"The minimum value in the BST is:"<<minVal(root)->data<<endl;
     
     cout<<endl;
@@ -289,4 +289,4 @@ cout<<endl;
 
 
     return 0;
-}
+}   
