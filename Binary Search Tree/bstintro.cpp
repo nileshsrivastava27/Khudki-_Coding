@@ -22,13 +22,11 @@ Node* insertIntoBST(Node* &root, int data){
     if(root == NULL){
         root = new Node(data);
         return root;
-
     }
 
     if(data > root ->data)
     {
         // right mein insert krna h root ke
-
         root->right = insertIntoBST(root->right, data);
     }
 
@@ -37,7 +35,17 @@ Node* insertIntoBST(Node* &root, int data){
     }
 
     return root;
+}
 
+void takeInput(Node* &root){
+
+    int data;
+    cin>>data;
+
+    while(data !=-1){
+        root = insertIntoBST(root, data);
+        cin>>data;
+    }
 }
 
 Node* minVal(Node* root){
@@ -61,16 +69,6 @@ Node* maxVal(Node* root){
 
 
 
-void takeInput(Node* &root){
-
-    int data;
-    cin>>data;
-
-    while(data !=-1){
-        root = insertIntoBST(root, data);
-        cin>>data;
-    }
-}
 
 void levelOrderTraversal(Node* root) {
     queue<Node*> q;
